@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master
-  repo: css-tricks/serverless
+  repo: icey830/gatsby-site
   open_authoring: true
 
 media_folder: static/img
