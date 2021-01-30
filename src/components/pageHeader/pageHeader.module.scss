@@ -1,0 +1,131 @@
+@import "../bits";
+
+.root {
+  padding: 2rem 2rem 0 2rem;
+  h1 {
+    font-size: 72px;
+    font-weight: 400;
+  }
+}
+
+.h1wrap {
+  h1 {
+    height: 130px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: -20px;
+  }
+  &[data-title="Services"] {
+    h1 {
+      background-image: url(/img/services-title.svg);
+    }
+  }
+  &[data-title="Resources"] {
+    h1 {
+      background-image: url(/img/resources-title.svg);
+    }
+  }
+  &[data-title="Ideas"] {
+    h1 {
+      background-image: url(/img/ideas-title.svg);
+    }
+  }
+  @include breakpoint(baby-bear) {
+    h1 {
+      height: 60px;
+    }
+  }
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-shadow: 0 0 1px black, 0 0 3px black;
+  strong {
+    color: #ea9e56;
+  }
+  @include breakpoint(nav-break) {
+    font-size: 9px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+    z-index: 1500;
+    background-color: #39256c;
+    background-image: url(/img/texture.png);
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 20px;
+      background: url(/img/horizontal-dividers.svg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: 100% 20px;
+      z-index: 1000;
+    }
+  }
+}
+
+.logo {
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+  @include breakpoint(nav-break) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.toggleImg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  margin: 0;
+}
+
+.menuButton {
+  border: 0;
+  background: none;
+  display: none;
+  outline: 0;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  @include breakpoint(nav-break) {
+    display: block;
+    margin-left: auto;
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.subtitleArea {
+  h2 {
+    font-family: var(--ff-gothic);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2rem 0 0 0;
+    line-height: 1;
+  }
+  p {
+    color: #c4b2ec;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../bits";
+
+.homeFooter {
+  margin: 5rem 0 0 0;
+  padding: 3rem;
+  text-align: center;
+  p {
+    color: #c4b2ec;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+  }
+  a {
+    color: #deabff;
+    font-weight: bold;
+  }
+}
+
+.whatis {
+  background-image: url("https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1558447509/what-is_izlaec.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100px;
+  text-indent: -9999px;
+  margin: 0 0 2em 0;
+}
+.findOutWrap {
+  background: rgba(black, 0.2);
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+}
+.findOut {
+  background: linear-gradient(to right, #8c4ec5, #e68f40);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.footerSep {
+  display: inline-block;
+  margin: 3rem 0;
+  max-width: 100%;
+}
+
+.builtWith {
+  white-space: nowrap;
+  > * {
+    vertical-align: middle;
+  }
+}
+.gatsby {
+  display: inline-block;
+  background-image: url(/images/gatsby.svg);
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-size: cover;
+}
+.netlify {
+  display: inline-block;
+  background-image: url(/images/netlify.png);
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-size: cover;
+}
